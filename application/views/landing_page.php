@@ -119,7 +119,7 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <a class="nav-link btn btn-primary" href="<?php echo base_url('/login'); ?>">Login</a>
+                        <a class="nav-link btn btn-primary" href="<?= base_url('/Login'); ?>">Login</a>
                     </li>
                 </ul>
             </div>

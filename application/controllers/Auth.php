@@ -5,15 +5,16 @@ class Auth extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->library('form_validation');
+        // $this->load->library('form_validation');
     }
 
-    public function show_login()
+    public function index()
     {
-        if ($this->form_validation->run() == false) {
-            $this->load->view('login');
-        } else {
-            $this->load->view('landing_page');
-        }
+        $this->load->view('Auth/Login');
+    }
+
+    public function Register()
+    {
+        $this->load->view('Auth/Register');
     }
 }
